@@ -1,0 +1,24 @@
+
+
+.search {
+    float: left; 
+    margin: 10px;
+
+}
+
+.today {
+    float: left;
+    margin: 10px;
+}
+
+.forecast {
+    float: left;
+    margin: 10px;
+}
+
+.day {
+    display: inline-block;
+    width: 16%;
+    margin-right: 20px;
+    margin-top: 10px;
+}
