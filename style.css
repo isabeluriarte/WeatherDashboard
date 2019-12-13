@@ -1,18 +1,12 @@
 
 
 .search {
-    float: left; 
+
     margin: 10px;
 
 }
 
 .today {
-    float: left;
-    margin: 10px;
-}
-
-.forecast {
-    float: left;
     margin: 10px;
 }
 
@@ -30,4 +24,18 @@
 
 li {
     text-transform: capitalize;
+}
+
+#forecast {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.forecast {
+    margin-left: 10px;
+}
+
+h4 {
+    margin: 10px;
 }

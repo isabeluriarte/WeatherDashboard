@@ -17,74 +17,84 @@
     <nav class="navbar navbar-dark bg-dark">
         <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
     </nav>
-
     <div class="container-fluid">
-        <div class="card search" style="width: 20rem;">
-            <div class="card-header">
-                <h4>Search for a city</h4>
-                <form class="form-inline">
-                    <input class="city-search form-control mr-sm-2" type="search" placeholder="Search"
-                        aria-label="Search">
-                    <button class="search-btn btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-            <ul class="list-group list-group-flush searched">
-            </ul>
-        </div>
-
-
-        <div class="card today col-md-8">
-            <div class="card-body">
-                <h3 class="card-title city-name">Today's Forecast</h3>
-                <h5 class="date"></h5>
-                <p id="temp">Temperature:</p>
-                <p id="humid">Humidity:</p>
-                <p id="wind">Wind Speed:</p>
-                <p id="uv">UV Index:</p>
-            </div>
-        </div>
-
-        <div class="forecast col-md-8">
-            <h4>5 Day Forecast</h4>
-            <div class="card day">
-                <div class="card-body day1">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text temp"></p>
-                    <p class="card-text humid"></p>
+        <div class="row">
+            <div class="card search col-md-3 px-0">
+                <div class="card-header">
+                    <h4>Search for a city</h4>
+                    <form class="form-inline">
+                        <input class="city-search form-control mr-sm-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="search-btn btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                 </div>
-            </div>
-            <div class="card day">
-                <div class="card-body day2">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text temp"></p>
-                    <p class="card-text humid"></p>
-                </div>
-            </div>
-            <div class="card day">
-                <div class="card-body day3">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text temp"></p>
-                    <p class="card-text humid"></p>
-                </div>
-            </div>
-            <div class="card day">
-                <div class="card-body day4">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text temp"></p>
-                    <p class="card-text humid"></p>
-                </div>
-            </div>
-            <div class="card day">
-                <div class="card-body day5">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text temp"></p>
-                    <p class="card-text humid"></p>
-                </div>
+                <ul class="list-group list-group-flush searched">
+                </ul>
             </div>
 
+            <div class="col-md-8">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="card today">
+                            <div class="card-body">
+                                <h3 class="card-title city-name">Today's Forecast</h3>
+                                <h5 class="date"></h5>
+                                <p id="temp">Temperature:</p>
+                                <p id="humid">Humidity:</p>
+                                <p id="wind">Wind Speed:</p>
+                                <p id="uv">UV Index:</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>5 Day Forecast</h4>
+                    </div>
+                </div>
+                <div class="row forecast">
+                    <div class="card day col-md-2">
+                        <div class="card-body day1">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text temp"></p>
+                            <p class="card-text humid"></p>
+                        </div>
+                    </div>
+                    <div class="card day col-md-2">
+                        <div class="card-body day2">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text temp"></p>
+                            <p class="card-text humid"></p>
+                        </div>
+                    </div>
+                    <div class="card day col-md-2">
+                        <div class="card-body day3">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text temp"></p>
+                            <p class="card-text humid"></p>
+                        </div>
+                    </div>
+                    <div class="card day col-md-2">
+                        <div class="card-body day4">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text temp"></p>
+                            <p class="card-text humid"></p>
+                        </div>
+                    </div>
+                    <div class="card day col-md-2">
+                        <div class="card-body day5">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text temp"></p>
+                            <p class="card-text humid"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
