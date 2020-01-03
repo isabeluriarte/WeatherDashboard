@@ -5,8 +5,11 @@ $(".card-title3").text(moment().add(3, 'day').format('dddd'))
 $(".card-title4").text(moment().add(4, 'day').format('dddd'))
 $(".card-title5").text(moment().add(5, 'day').format('dddd'))
 
-var savedSearch = localStorage.getItem("city")
-savedSearch = JSON.parse(savedSearch);
+var savedSearch = [];
+if(localStorage.getItem("city")){
+    savedSearch = localStorage.getItem("city")
+    savedSearch = JSON.parse(savedSearch);
+}
 
 savedSearch.forEach(function(city){
     var prevSearch = $("<li>").addClass("list-group-item");
