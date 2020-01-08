@@ -24,7 +24,7 @@ localStorage.setItem("city", JSON.stringify(arr))
 function displayWeather(city) {
 
     
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=f441cfb77f1af8db9f72b34e1d10a300";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=f441cfb77f1af8db9f72b34e1d10a300";
 
     $.ajax({
         url: queryURL,
