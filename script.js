@@ -62,7 +62,7 @@ function displayWeather(city) {
 
         function displayUV() {
 
-            var UVqueryURL = "http://api.openweathermap.org/data/2.5/uvi?appid=f441cfb77f1af8db9f72b34e1d10a300&lat=" + response.coord.lat + "&lon=" + response.coord.lon;
+            var UVqueryURL = "https://api.openweathermap.org/data/2.5/uvi?appid=f441cfb77f1af8db9f72b34e1d10a300&lat=" + response.coord.lat + "&lon=" + response.coord.lon;
 
             $.ajax({
                 url: UVqueryURL,
@@ -86,7 +86,7 @@ const tempConverter = (kelTemp)=> {
 // }
 
 function fiveDay(city){
-    var queryURL = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=f441cfb77f1af8db9f72b34e1d10a300`
+    var queryURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=f441cfb77f1af8db9f72b34e1d10a300`
 
     $.ajax({
         url: queryURL,
